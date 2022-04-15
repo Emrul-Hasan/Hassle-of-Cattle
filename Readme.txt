@@ -49,8 +49,7 @@ User Guide:
 ########################### Developed By ##########################
 
 	MD EMRUL HASAN EMON          ID: 19-40357-1
-	AFIFA TAZREMIN OISHI         ID: 19-40028-1
-	LOKMAN HOSSAIN SHARIF        ID: 19-39579-1
+	
 
 ########################## Project Limitations #####################
 	It is not an web based application.
