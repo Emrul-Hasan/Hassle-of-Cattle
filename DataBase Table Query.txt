@@ -1,0 +1,134 @@
+                                     ***************  Hassle Of cattle *****************
+
+
+-> Database Name : HassleofCattleDb.mdf
+
+Total table: 8
+
+     1.	Table Name: EmployeeTbl
+
+CREATE TABLE [dbo].[EmployeeTbl] (
+    [EmpId]   INT          IDENTITY (300, 1) NOT NULL,
+    [EmpName] VARCHAR (50) NOT NULL,
+    [EmpDob]  DATE         NOT NULL,
+    [Gender]  VARCHAR (50) NOT NULL,
+    [Phone]   VARCHAR (50) NOT NULL,
+    [Address] VARCHAR (50) NOT NULL,
+    [EmpPass] VARCHAR (50) NULL,
+    [Picture] IMAGE        NULL,
+    PRIMARY KEY CLUSTERED ([EmpId] ASC)
+);
+
+
+
+
+     2. Table Name: CowTbl
+
+CREATE TABLE [dbo].[CowTbl] (
+    [CowId]         INT          IDENTITY (1000, 1) NOT NULL,
+    [CowName]       VARCHAR (50) NOT NULL,
+    [EarTag]        VARCHAR (50) NOT NULL,
+    [Color]         VARCHAR (50) NOT NULL,
+    [Breed]         VARCHAR (50) NOT NULL,
+    [Age]           INT          NOT NULL,
+    [WeightAtBirth] INT          NOT NULL,
+    [Pasture]       VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([CowId] ASC)
+);
+
+
+     3.	Table Name:  BreedTbl
+
+CREATE TABLE [dbo].[BreedTbl] (
+    [BrId]         INT           IDENTITY (2000, 1) NOT NULL,
+    [HeatDate]     DATE          NOT NULL,
+    [BreedDate]    DATE          NOT NULL,
+    [CowId]        INT           NOT NULL,
+    [CowName]      VARCHAR (50)  NOT NULL,
+    [PregDate]     DATE          NOT NULL,
+    [ExpDateCalve] DATE          NOT NULL,
+    [DateCalved]   DATE          NOT NULL,
+    [CowAge]       INT           NOT NULL,
+    [Remarks]      VARCHAR (100) NOT NULL,
+    PRIMARY KEY CLUSTERED ([BrId] ASC)
+);
+
+
+     4.	Table Name: MilkTbl
+
+CREATE TABLE [dbo].[MilkTbl] (
+    [Mid]       INT          IDENTITY (1, 1) NOT NULL,
+    [CowId]     INT          NOT NULL,
+    [CowName]   VARCHAR (50) NOT NULL,
+    [AmMilk]    INT          NOT NULL,
+    [NoonMilk]  INT          NOT NULL,
+    [PmMilk]    INT          NOT NULL,
+    [TotakMilk] INT          NOT NULL,
+    [DateProd]  DATE         NOT NULL,
+    PRIMARY KEY CLUSTERED ([Mid] ASC)
+);
+
+
+     5. Table Name: MilkSalesTbl
+
+CREATE TABLE [dbo].[MilkSalesTbl] (
+    [SId]         INT          IDENTITY (1, 1) NOT NULL,
+    [Date]        DATE         NOT NULL,
+    [Uprice]      INT          NOT NULL,
+    [ClientName]  VARCHAR (50) NOT NULL,
+    [ClientPhone] VARCHAR (50) NOT NULL,
+    [EmpId]       INT          NOT NULL,
+    [Quantity]    INT          NOT NULL,
+    [Amount]      INT          NOT NULL,
+    PRIMARY KEY CLUSTERED ([SId] ASC)
+);
+
+
+     6.	Table Name: HealthTbl
+
+CREATE TABLE [dbo].[HealthTbl] (
+    [RepId]     INT          IDENTITY (500, 1) NOT NULL,
+    [cowId]     INT          NOT NULL,
+    [cowName]   VARCHAR (50) NOT NULL,
+    [RepDate]   DATE         NOT NULL,
+    [Event]     VARCHAR (50) NOT NULL,
+    [Diagnosis] VARCHAR (50) NOT NULL,
+    [Treatment] VARCHAR (50) NOT NULL,
+    [Cost]      INT          NOT NULL,
+    [VetName]   VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([RepId] ASC)
+);
+
+
+
+
+
+     7.	Table Name: ExpenditureTbl
+
+CREATE TABLE [dbo].[ExpenditureTbl] (
+    [ExpId]      INT          IDENTITY (1, 1) NOT NULL,
+    [ExpDate]    DATE         NOT NULL,
+    [ExpPurpose] VARCHAR (50) NOT NULL,
+    [ExpAmount]  INT          NOT NULL,
+    [EmpId]      INT          NOT NULL,
+    PRIMARY KEY CLUSTERED ([ExpId] ASC)
+);
+
+
+
+     8.	Table Name: IncomeTbl
+
+CREATE TABLE [dbo].[IncomeTbl] (
+    [IncId]      INT          IDENTITY (1, 1) NOT NULL,
+    [IncDate]    DATE         NOT NULL,
+    [IncPurpose] VARCHAR (50) NOT NULL,
+    [IncAmt]     INT          NOT NULL,
+    [EmpId]      INT          NOT NULL,
+    PRIMARY KEY CLUSTERED ([IncId] ASC)
+);
+
+
+
+           ****************************           **************************      **************************
+
+
