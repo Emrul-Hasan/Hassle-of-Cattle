@@ -1,12 +1,11 @@
 # Hassle Of Cattle (Windows Based Application)
 
-
-### Software and Frameworks Used
-1.Microsoft Visual Studio Version 16.11.5
-2.ITextSharp 5.5.13.2
-3.Microsoft Interop.Excel.dill
-4.Microsoft SQL Server Database File (SqlClient)
-5.Windows form application (.Net framework)
+*** Software and Frameworks Used ***
+* 1.Microsoft Visual Studio Version 16.11.5
+* 2.ITextSharp 5.5.13.2
+* 3.Microsoft Interop.Excel.dill
+* 4.Microsoft SQL Server Database File (SqlClient)
+* 5.Windows form application (.Net framework)
 
 Overall Project Features are mentioned in the Project Proposal
 
