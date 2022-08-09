@@ -1,8 +1,7 @@
-                       #########################  Hassle Of Cattle ###################
+# Hassle Of Cattle (Windows Based Application)
 
-LETS FIND HOME 1.0
 
-Software and Frameworks Used
+### Software and Frameworks Used
 1.Microsoft Visual Studio Version 16.11.5
 2.ITextSharp 5.5.13.2
 3.Microsoft Interop.Excel.dill
