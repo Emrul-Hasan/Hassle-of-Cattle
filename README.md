@@ -8,21 +8,20 @@
 * Windows form application (.Net framework)
 
 *** ***Installation Guid*** ***
-*Go to Lets Find Home -> Hassle_of_Cattle ->Debug ->Setup.exe
-*After Installing, Open the software by clicking the shortcut in the desktop.
+
+* Go to Lets Find Home -> Hassle_of_Cattle ->Debug ->Setup.exe
+* After Installing, Open the software by clicking the shortcut in the desktop.
 
 
 *** ***Initial Login Credential for Admin*** ***
-  
-***From the Login interface***
+### From the Login interface***
 
-   *User name : Admin
-   *Password : Admin
+   * User name : Admin
+   * Password : Admin
 
-  After a successful login , Admin dashboard will be appear. 
+  * After a successful login , Admin dashboard will be appear. 
 
 User Guide:
-
 
 1) User have to login first by selecting the role.
 2) If the role is as admin, he/she can see the employee details. He can add employees, edit employees details, delete employees, clear the information and also upload    photos.
